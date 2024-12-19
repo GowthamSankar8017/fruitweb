@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li {
+  font-family: "Poppins", serif;
+}
+.navbar .nav-link {
+  color: rgb(16, 249, 66);
+}
+.navbar .nav-link:hover {
+  color: yellow;
+}
+.navbar {
+  background-color: white;
+  background-color: black;
+}
+.navbar-brand {
+  color: rgb(214, 199, 212);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+}
+.navbar-brand:hover {
+  color: white;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+}
+#menuicon {
+  color: rgb(233, 232, 236);
+  font-size: 28px;
+}
+
+.home-section {
+  background: url("./pexels-qjpioneer-708777.jpg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+
+.home-section p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  color: rgb(240, 233, 97);
+}
+
+.home-section .btn {
+  background-color: #2a8808;
+  border: none;
+  padding: 8px 20px;
+}
+
+.home-section .btn:hover {
+  background-color: #f74728e0;
+}
+
+#abouthead {
+  margin: 30px 0px;
+  text-align: center;
+  font-size: 30px;
+  color: darkblue;
+  font-weight: bolder;
+}
+.aboutsection p {
+  font-size: 17px;
+  margin-bottom: 10px;
+  line-height: 1.8;
+  color: #553333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.aboutsection h2 {
+  color: rgb(235, 41, 41);
+}
+
+img {
+  border-radius: 20px;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 20px;
+  background: #e2e0e0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.features-section {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+
+
+
+.feature-box:hover {
+  transform: scale(1.05);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #d7430e;
+  margin-bottom: 15px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  color: #555;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .home-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-section p {
+    font-size: 1.1rem;
+  }
+}
+
+#prod1,#prod2,#prod3,#prod4,#prod5,#prod6,#prod7,#prod8,#prod9{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}

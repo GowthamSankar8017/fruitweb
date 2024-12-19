@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <meta http-equiv="refresh" content="6" /> -->
+    <link rel="stylesheet" href="/Project/style2.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <div
+      class="navbar navbar-expand-sm fixed-top d-flex justify-content-center"
+    >
+      <div class="container-fluid">
+        <!-- logo -->
+        <a href="#" class="navbar-brand">
+          <img
+            src="./fruit2.jpg"
+            alt=""
+            height="40px"
+            width="40px"
+            class="rounded-pill"
+          />
+          SG Fruits
+        </a>
+        <!-- menubtn -->
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#box"
+        >
+          <i class="bi bi-list" id="menuicon"></i>
+          <!-- Custom icon -->
+        </button>
+
+        <!-- nav items -->
+        <div id="box" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link links active">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#about" class="nav-link links">About</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                href="#services"
+                class="nav-link dropdown-toggle links"
+                data-bs-toggle="dropdown"
+                >Service</a
+              >
+              <!-- nested list -->
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Fresh Fruits</a></li>
+                <li><a href="#" class="dropdown-item">Delivery Services</a></li>
+                <li>
+                  <a href="#" class="dropdown-item">Subscription Plans</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item me-4">
+              <a href="#contact" class="nav-link links">Contact</a>
+            </li>
+          </ul>
+
+          <!-- search -->
+          <form action="#" class="d-flex">
+            <input
+              type="search"
+              class="form-control me-2 rounded-pill"
+              placeholder="search..."
+            />
+            <button type="button" class="btn btn-primary">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- home section -->
+    <section class="home-section" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Welcome to <span>SG</span> Fruits</h1>
+            <p>
+              Enjoy the freshest and most delicious fruits, handpicked for your
+              health and happiness.
+            </p>
+            <button class="btn btn-primary">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+
+    <section class="aboutsection" id="about">
+      <h2 id="abouthead">About us</h2>
+      <div class="container">
+        <div class="row gx-4 gy-5 align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <img
+              src="./pexels-janetrangdoan-1132047.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <h2>SG Fruits</h2>
+            <p>
+              Welcome to G Fruits! We are passionate about providing the
+              freshest and highest quality fruits to our customers. From farm to
+              table, we ensure every fruit is handpicked and carefully
+              delivered.
+            </p>
+            <p>
+              Our mission is to promote healthy living by offering a variety of
+              fruits that are both delicious and nutritious.
+            </p>
+
+            <button class="btn btn-primary">Learn More</button>
+            <button class="btn btn-danger">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <h2 class="mb-5 text-success">Our Features</h2>
+        <div class="row g-4">
+          <!-- Feature 1 -->
+          <div class="col-md-4">
+            <div class="feature-box">
+              <i class="bi bi-basket2-fill feature-icon"></i>
+              <h3 class="feature-title">Fresh Fruits</h3>
+              <p class="feature-description">
+                Only the freshest fruits delivered straight to your home.
+              </p>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="col-md-4">
+            <div class="feature-box">
+              <i class="bi bi-truck feature-icon"></i>
+              <h3 class="feature-title">Fast Delivery</h3>
+              <p class="feature-description">
+                Quick and reliable delivery to ensure freshness.
+              </p>
+            </div>
+          </div>
+          <!-- Feature 3 -->
+          <div class="col-md-4">
+            <div class="feature-box">
+              <i class="bi bi-star-fill feature-icon"></i>
+              <h3 class="feature-title">Quality Guaranteed</h3>
+              <p class="feature-description">
+                Top-notch quality for every order, every time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product -->
+    <h2 class="text-center mb-4 text-danger" id="services">Products</h2>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card text-center p-2" id="prod1">
+            <img src="./orange.jpg" alt="orange" class="img-fluid" />
+            <div class="card-body">
+              <h5 class="card-title text-primary fw-bolder">Orange</h5>
+              <p class="card-text">
+                <small class="text-body-secondary text-danger fw-bold">
+                  Rs.70/kg
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center p-2" id="prod2">
+            <img src="./Avocado.jpg" alt="Avocado" class="img-fluid" />
+            <div class="card-body">
+              <h5 class="card-title text-primary fw-bolder">Avocado</h5>
+              <p class="card-text">
+                <small class="text-body-secondary text-danger fw-bold">
+                  Rs.100/kg
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center p-2" id="prod3">
+            <img src="./cherry.jpg" alt="cherry" class="img-fluid" />
+            <div class="card-body">
+              <h5 class="card-title text-primary fw-bolder">cherry</h5>
+              <p class="card-text">
+                <small class="text-body-secondary fw-bold text-danger">
+                  Rs.130/kg
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center p-2" id="prod4">
+            <img src="./Fig.jpg" alt="Fig" class="img-fluid" />
+            <div class="card-body">
+              <h5 class="card-title text-dark text-primary fw-bolder">Figs</h5>
+              <p class="card-text">
+                <small class="text-body-secondary text-danger fw-bold">
+                  Rs.150/kg
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center p-2" id="prod5">
+            <img src="./JackFruit.jpg" alt="Jackfruit" class="img-fluid" />
+            <div class="card-body">
+              <h5 class="card-title text-dark text-primary fw-bolder">
+                JackFruit
+              </h5>
+              <p class="card-text">
+                <small class="text-body-secondary text-danger fw-bold">
+                  Rs.180/kg
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center p-2" id="prod6">
+            <img src="./Lychee.jpg" alt="" class="img-fluid" />
+            <div class="card-body">
+              <h5 class="card-title text-dark fw-bolder text-primary">
+                Lychee
+              </h5>
+              <p class="card-text">
+                <small class="text-body-secondary fw-bolder text-danger">
+                  Rs.210/kg
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center p-2" id="prod7">
+            <img src="./Mango.jpg" alt="Mango" class="img-fluid" />
+            <div class="card-body">
+              <h5 class="card-title text-dark fw-bolder text-primary">Mango</h5>
+              <p class="card-text">
+                <small class="text-body-secondary fw-bold text-danger">
+                  Rs.250/kg
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center p-2" id="prod8">
+            <img src="./MuskMelon.jpg" alt="MuskMelon" class="img-fluid" />
+            <div class="card-body">
+              <h5 class="card-title text-dark fw-bolder text-primary">
+                MuskMelon
+              </h5>
+              <p class="card-text">
+                <small class="text-body-secondary fw-bold text-danger">
+                  Rs.270/kg
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card text-center p-2" id="prod9">
+            <img src="./Papaya.jpg" alt="Papaya" class="img-fluid" />
+            <div class="card-body">
+              <h5 class="card-title text-dark fw-bolder text-primary">
+                Papaya
+              </h5>
+              <p class="card-text">
+                <small class="text-body-secondary fw-bold text-danger">
+                  Rs.300/kg
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="text-center text-info">Contact Us</h2>
+            <p class="text" style="color: darkorange">
+              If you have any questions, feel free to reach out to us!
+            </p>
+            <div class="mb-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12657.31214583257!2d80.22525726228419!3d10.924397914212736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05169a59be6df7%3A0xb19a46f632e4a5b1!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1707320193504!5m2!1sen!2sin"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <form action="#">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-info text-white">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 style="color: orangered">About Us</h5>
+            <p>
+              Our mission is to promote healthy living by offering a variety of
+              fruits that are both delicious and nutritious.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5 style="color: deeppink">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#home" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="text-white text-decoration-none"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="text-white text-decoration-none"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-white text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 style="color: darkgoldenrod">Follow Us</h5>
+            <ul class="list-unstyled d-flex">
+              <li class="mx-2">
+                <a
+                  href="https://www.youtube.com/"
+                  class="text-white text-decoration-none active"
+                  >Youtube</a
+                >
+              </li>
+              <li class="mx-2">
+                <a
+                  href="https://www.facebook.com/"
+                  class="text-white text-decoration-none"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mx-2">
+                <a
+                  href="https://www.instagram.com/"
+                  class="text-white text-decoration-none"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p>&copy; 2024 SG Company. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
